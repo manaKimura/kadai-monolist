@@ -5,8 +5,10 @@
             <div class="form-group">
                 <%= text_field_tag :keyword, @keyword, class: 'form-control input-lg', placeholder: "キーワードを入力", size: 40 %>
             </div>
-            <%= submit_tag '商品を検索', class: 'btn btn-success btn-lg'%>
+            <%= submit_tag '商品を検索', class: 'btn btn-success btn-lg' %>
         <% end %>
     </div>
   </div>
 </div>
+
+<%= render 'items', items: @items %>
